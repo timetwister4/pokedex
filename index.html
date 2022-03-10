@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+  </head>
+  <body>
+      <div class="container">
+      <div id="column-1">
+        <header>Pokedex</header>
+        <input id="searchBar" type="text" />
+        <button onClick="search()">Search</button>
+        <div id="pokemonData">
+        <img id="pokemonImage" onClick="onImageClick()" />
+        <div class="pokemonStats" id="pokemonStats">
+            <div id="pokemonNumber"></div>
+            <div>Name: <span id="pokemonName"></span></div>
+            <div>Types: <span id="pokemonTypes"></span></div>
+        </div>
+        </div>
+        <button id="saveButton" onClick="savePokemon()">Use Pokeball</button>
+    </div>
+    <div id="column-2">
+        <div id="stable"></div>
+    </div>
+</div>
+    <div id="pokeball" class="pokeball hidden">
+      <div class="pokeball_button"></div>
+    </div>
+  </body>
+</html>
